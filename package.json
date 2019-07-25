@@ -1,0 +1,28 @@
+{
+  "name": "serverless-encrypt-enviroment-variablese",
+  "version": "1.0.0",
+  "description": "Serverless plugin that get encrypted ssm parameters and keep then encrypted on lambda console with a valid hash.\n",
+  "main": "index.js",
+  "author": "Acássio Marques <acassiomarques@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:acassio/serverless-encrypt-enviroment-variables.git"
+  },
+  "dependencies": {
+    "aws-sdk": "2.499.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "serverless",
+    "kms",
+    "enviroment variables"
+  ],
+  "license": "MIT"
+}
