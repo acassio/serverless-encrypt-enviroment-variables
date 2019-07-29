@@ -1,5 +1,5 @@
 {
-  "name": "serverless-encrypt-enviroment-variablese",
+  "name": "serverless-encrypt-enviroment-variables",
   "version": "1.0.0",
   "description": "Serverless plugin that get encrypted ssm parameters and keep then encrypted on lambda console with a valid hash.\n",
   "main": "index.js",
