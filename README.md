@@ -24,14 +24,24 @@ custom:
   env:
     keyArn: "arn:aws:kms......"
     functions:
-       - name: "function1"
+       - name: "example1"
          variables:
             - VAR1: "encrypt:/VARIABLE/ENCRYPTED"
             - VAR2: "ssm:/VARIABLE/DECRYPTED"
             - VAR3: "NORMAL_VALUE"
-       - name: "function2"
+       - name: "example2"
          variables:
             - VAR1: "encrypt:/VARIABLE/ENCRYPTED"
             - VAR2: "ssm:/VARIABLE/DECRYPTED"
             - VAR3: "NORMAL_VALUE"
+              
+functions:
+  example1:
+    handler: bin/service
+    name: ${self:provider.stage}-${self:service.name}-example1
+    description: Example...
+  example2:
+    handler: bin/service
+    name: ${self:provider.stage}-${self:service.name}-example2
+    description: Example 2...         
 ```
