@@ -14,8 +14,9 @@ custom:
   env:
     keyArn: "arn:aws:kms......"
     variables:
-      - ENV_VAR1: "SSM_PARAMETER_NAME_1"
-      - ENV_VAR2: "SSM_PARAMETER_NAME_2"      
+       - VAR1: "encrypt:/VARIABLE/ENCRYPTED"
+       - VAR2: "ssm:/VARIABLE/DECRYPTED"
+       - VAR3: "NORMAL_VALUE"   
 ```
 
 usage with function local variables:
